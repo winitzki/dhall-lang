@@ -2,6 +2,8 @@
 
 For example, `Validate Natural Natural/isZero 0` is the unit type `{}`,
 while `Validate Natural Natural/isZero 1` is the void type `<>`.
+
+Users just need to pass {=} for values of a Validate type.
 -}
 let Validate
     : ∀(T : Type) → ∀(cond : T → Bool) → T → Type
